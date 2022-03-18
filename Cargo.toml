@@ -1,0 +1,13 @@
+[package]
+name = "wasi-server"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[dependencies]
+env_logger = { version = "0.9.0", default-features = false }
+mio = { version = "0.8.2", features=[ "os-poll", "net" ] }
+
+[[bin]]
+name = "wasi-server-tcp"
+path = "src/tcp/main.rs"
