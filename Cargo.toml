@@ -11,3 +11,7 @@ mio = { version = "0.8.2", features=[ "os-poll", "net" ] }
 [[bin]]
 name = "wasi-server-tcp"
 path = "src/tcp/main.rs"
+
+[[bin]]
+name = "wasi-server-http"
+path = "src/http/main.rs"
